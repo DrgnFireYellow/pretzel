@@ -1,6 +1,8 @@
 import argparse
 from pathlib import Path
 import directives
+import webbrowser
+import os
 
 argumentparser = argparse.ArgumentParser("pretzel", description="Convert a Pretzel presentation to an html file.")
 argumentparser.add_argument("file")
@@ -29,3 +31,5 @@ presentationfile.close()
 
 with open(Path(args.file).stem + ".html", "w") as outputfile:
     outputfile.write(output)
+
+webbrowser.open("file://" + os.path.realpath(Path(args.file).stem + ".html"))
