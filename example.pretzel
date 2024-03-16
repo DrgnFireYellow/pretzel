@@ -1,0 +1,19 @@
+@primarycolor blue
+@secondarycolor white
+@font monospace
+@justify center
+@startslide
+@heading Pretzel Example
+This is an example of how to use Pretzel.
+@endslide
+
+@startslide
+@heading this is another slide
+@small Always read the fine print!
+@endslide
+
+@startslide
+@heading Images work too!
+@image https://upload.wikimedia.org/wikipedia/commons/0/07/Pretzels-bunch.jpeg
+@small Source: WikiMedia Commons
+@endslide
