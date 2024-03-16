@@ -12,7 +12,7 @@ presentationfile = open(args.file)
 
 presentationcontents = presentationfile.readlines()
 
-output = '<!DOCTYPE html><html><style>html {scroll-snap-type: y mandatory;} .slide {height: 100vh; scroll-snap-align: start;} img {width: 50vw}</style>'
+output = '<!DOCTYPE html><html><link href="https://unpkg.com/prismjs@v1.x/themes/prism.css" rel="stylesheet" /><script src="https://unpkg.com/prismjs@v1.x/components/prism-core.min.js"></script><script src="https://unpkg.com/prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script><style>html {scroll-snap-type: y mandatory;} .slide {height: 100vh; scroll-snap-align: start;} img {width: 50vw}</style>'
 
 for line in presentationcontents:
     if line.startswith("@"):

@@ -26,3 +26,7 @@ def font(font: str):
 
 def justify(value: str):
     return '<style>body {text-align: %s;}</style>' % value
+
+def code(sourcefile: str, language: str):
+    with open(sourcefile) as source:
+        return f'<pre><code class="language-{html.escape(language)}">{html.escape(source.read())}</code></pre>'

@@ -17,3 +17,9 @@ This is an example of how to use Pretzel.
 @image https://upload.wikimedia.org/wikipedia/commons/0/07/Pretzels-bunch.jpeg
 @small Source: WikiMedia Commons
 @endslide
+
+@startslide
+@heading There's even code blocks!
+@code directives.py python
+@small The source code for the directive parser
+@endslide
